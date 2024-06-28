@@ -8,7 +8,6 @@
 <body>
 
     <?php 
-    
         /*
         $color[1] = "red"; 
         $color[2] = "Green"; 
@@ -21,7 +20,7 @@
         $color = array(1 => "Red", 2 => "Green", 3 => "Blue", "Test" => 1);
     ?>
 
-    <?= $color ?>
+    <pre><?php print_r($color); ?></pre>
 
 </body>
 </html>

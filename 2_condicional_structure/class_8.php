@@ -12,16 +12,20 @@
         $parameter = '2';
 
         switch ($parameter) {
-            case 1:
+            case false:
                 $comparation = ($parameter == 1 || $parameter == '1') ? "true" : "false";
 
                 echo $comparation . "Is in the case 1" . "\n";
                 break;
 
-            case 2: 
+            case false: 
                 $comparation = ($parameter == 2 || $parameter == '2') ? "true" : "false";
 
                 echo "\n" . $comparation . "\n\nIs in the case 2";
+
+            default:
+
+                echo "It's just a test in this 'default'";
         }
     ?>
 
