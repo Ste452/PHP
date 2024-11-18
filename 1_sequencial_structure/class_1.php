@@ -1,23 +1,26 @@
+<!DOCTYPE html>
 <html>
+
     <head>
-        <meta charset="utf-8" />
-        <title>PHP course</title>
+
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta http-equiv="refresh" content="5">
+
     </head>
+
 
     <body>
         
-        <?php 
+        <?php
 
-            echo "Using my first pattern tag";
+            // A command to print my first code in PHP
+            echo "<br /> Hello PHP!";
 
+            /* 
+            That's my first comment in PHP, in that time, I will learning this programming language 
+            */
         ?>
 
-        <br />
-        <br />
-
-        <?= "Using the print tag for the first time" ?>
-
-        <? "Using small tag for the first time" ?>
-    
     </body>
+
 </html>
