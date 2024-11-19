@@ -22,6 +22,10 @@
         echo '<br>';
         echo '<br>';
         echo var_dump($vetor);
+
+        echo "<br>";
+        echo "<br>";
+        print_r($vetor);
     ?>
 
 </body>
