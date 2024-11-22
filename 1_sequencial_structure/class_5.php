@@ -26,6 +26,56 @@
         echo "<br>";
         echo "<br>";
         print_r($vetor);
+
+        // Dynamic Variables
+
+        // $variable = 'name';
+        // $$variable = 'Maria';
+
+        // echo "<br>";
+        // echo "<br>";
+        // echo $$variable;
+
+        // Or we can do in this form
+
+        $variable = 'name';
+        $persons = ['name' => 'Maria'];
+        echo "<br>";
+        echo "<br>";
+        
+        echo $persons[$variable];
+
+        // Variables Atribution 
+        /*$a = 5;
+        $b = $a;
+        $b = 10;
+        echo "<br>";
+        echo "<br>";
+        echo $a; // resultado = 5
+        echo '; '; // espaço
+        echo $b; // resultado = 10 */
+
+        // Variable reference in memory
+             
+        /* $a = 5;
+        $b = &$a;
+        echo "<br>";
+        echo "<br>";
+        echo $a; // resultado = 5
+        echo '; '; // espaço
+        echo $b; // resultado = 10 */
+
+        // Object reference
+
+        $a = new stdClass;
+        $a -> name = "Maria"; // Attribute defined
+        $b = $a; // Create the replica
+        $b -> name = "Joana"; // Attribute defined
+        
+        print($a -> name); // Result = Joana
+        print(' '); // Space
+        print($b -> name); // Result = Joana
+
     ?>
 
 </body>
