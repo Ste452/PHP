@@ -68,7 +68,16 @@
 
         $calleble = "hello";
         $calleble();
-    
+
+        // Declarations Types
+        
+        $a = 5;
+        $b = "Test";
+
+        var_dump($a, $b);
+        var_dump('test' . 5);
+        var_dump('5' + '10');
+
     ?>
 
 </body>
