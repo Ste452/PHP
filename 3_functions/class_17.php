@@ -9,13 +9,23 @@
 
   <?php 
   
+      // Converting variables
 
-      function calculate_imc(float $weight, float $height) {
-          var_dump($weight, $height);
-          return $weight / ($height^2);
+      function array_calculate_imc(float $weight, float $height): array {
+
+        return str_split((String) $weight, $height);
       }
-      
-      var_dump(calculate_imc('75.1', 2));
+  
+
+      // The good way for converting types in paramer is if they are similar 
+      function calculate_imc(float $weight, float $height): int {
+        var_dump((int) $weight, (int) $height);
+        return (int) $weight / ((Integer) $height * $height);
+      }
+
+      var_dump(array_calculate_imc(75, 1.85));
+      echo "<br />" . "<br />";
+      var_dump(calculate_imc(75, 1.85));
   
   
   ?>
