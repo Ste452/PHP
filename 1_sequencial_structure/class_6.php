@@ -47,15 +47,12 @@ function subtract($minuend, $subtrahend) {
 
 subtract(22, 5);
 
-function divide($dividend, $divisor) {
+function divide($dividend, $divison) {
 
-     if ($divisor == 0) {
-
-        echo "Error: Impossible division by zero. <br>";      
-
+     if ($divison == 0) {
+        echo "Error: Impossible division by zero. " . "<br>";      
       } else {
-
-         echo "The division in $dividend e $divisor é" . ($dividend / $divisor) . "<br>";
+         echo "The division in $dividend e $divison: " . ($dividend / $divison) . "<br>";
       }   
 }
 
@@ -63,9 +60,15 @@ divide(34, 17);
 
 $array = [1, 2, 3, 4, 5];
 
+$array2 = ["name" => "Steve", "age" => 17];
+
+foreach ($array2 as $key => $value) {
+  echo "Associative Array - Key: $key, Value: $value<br>";
+}
+
 $isValidArray = true;
 
-foreach ($array as $valor) {
+foreach ($array as $value) {
 
   if (!is_numeric($value)) {
      $isValidArray = false;
@@ -77,26 +80,30 @@ if ($isValidArray){
   
   echo "All value of array are numbers.<br>";
 
-  for ($i = 1; $i <= count($array); $i++) {
+  for ($i = 0; $i <= count($array); $i++) {
     
-    echo "The value in $i position is:" . $array[i] . "<br>";
+    echo "The value in $i position is:" . ($i + 1) . "is: " . $array[$i] . "<br>";
   
 }
-
   $sum = array_sum($array);
-  echo "The sum of all numbers of array is: " . $array[i] . "<br>";
+  echo "The sum of all numbers in the array is: $sum<br>";
 } else {
   echo "The array contain non numeric values.";
 }
 
-function arrayPosition() {
+function arrayPosition($array) {
 
-    echo "The initial position of array: " . $array[0];
-    echo "The final position of array is: " . $array[cout($array) - 1] . "<br>";
+    echo "The initial position of array: " . $array[0] . "<br>";
+    echo "The final position of array is: " . $array[count($array) - 1] . "<br>";
 
 }
 
-arrayPosition();
+function arrayMax($array) {
+  echo "The max value of the array: " . max($array) . "<br>";
+}
+
+arrayPosition($array);
+arrayMax($array);
 ?>
 
 </body>
